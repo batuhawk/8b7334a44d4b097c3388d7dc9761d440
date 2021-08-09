@@ -1,0 +1,125 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 210px 0 0 0;
+
+    &__hotel-and-date {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        max-width: 1540px;
+        width: 100%;
+
+        margin: 50px 0 0 0;
+
+        &__hotels {
+            width: 100%;
+            padding: 20px;
+            border: 2px solid var(--black);
+            border-radius: 10px;
+
+            font-size: 18px;
+        }
+
+        &__date {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            &__entry-date,
+            &__exit-date,
+            &__number-of-adults,
+            &__number-of-children {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-direction: column;
+
+                height: 100px;
+
+                margin: 50px 0 0 0;
+                
+                label {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                input {
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__button {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            margin: 50px 0 0 0;
+
+            &__save-and-continue {
+                text-decoration: none;
+                background-color: var(--dark-green);
+                transition: 0.3s background-color;
+                padding: 20px;
+                border-radius: 10px;
+
+                color: var(--white);
+
+                &:hover {
+                    background-color: var(--darker-green);
+                }
+            }
+        }
+    }
+
+    &__room-type-and-view {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        max-width: 1540px;
+        width: 100%;
+
+        margin: 50px 0 0 0;
+
+        &__button {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin: 50px 0 0 0;
+
+            &__save-and-continue,
+            &__back {
+                text-decoration: none;
+                background-color: var(--dark-green);
+                transition: 0.3s background-color;
+                padding: 20px;
+                border-radius: 10px;
+
+                color: var(--white);
+
+                &:hover {
+                    background-color: var(--darker-green);
+                }
+            }
+        }
+    }
+}

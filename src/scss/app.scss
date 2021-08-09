@@ -1,0 +1,29 @@
+@import url('header.scss');
+@import url('steps.scss');
+@import url('colors.scss');
+@import url('content.scss');
+
+:root {
+    --font-family: 'Roboto-Regular', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/src/fonts/Roboto-Regular.ttf'), format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, 
+body {
+    background-color: var(--white);
+    font-family: var(--font-family);
+}
